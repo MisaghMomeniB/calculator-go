@@ -1,92 +1,128 @@
-# calculator-go
+# 🧮 Calculator Go
 
-A simple, lightweight command-line calculator written in Go. It supports basic arithmetic operations: addition, subtraction, multiplication, and division.
+A simple, fast, and lightweight **command-line calculator** built with Go 🐹
+Supports basic arithmetic operations with clean and minimal design.
 
-## Features
+---
 
-- Basic arithmetic: `+`, `-`, `*`, `/`
-- Floating-point number support
-- Clear error handling for invalid inputs and division by zero
-- Minimal and fast – no external dependencies
+## ✨ Features
 
-## Installation
+* ➕ Addition
+* ➖ Subtraction
+* ✖️ Multiplication
+* ➗ Division
+* ⚡ Fast CLI-based execution
+* 🧠 Clean and readable Go implementation
+* 📦 Lightweight with zero external dependencies
 
-### Option 1: Using `go install`
+---
 
-```bash
-go install github.com/MisaghMomeniB/calculator-go/src@latest
-```
+## 🛠️ Tech Stack
 
-### Option 2: Build from source
+* 🐹 Go (Golang)
+* 📦 Standard Library only
+* 💻 CLI (Command Line Interface)
 
-Clone the repository and build the binary:
+---
 
-```bash
-git clone https://github.com/MisaghMomeniB/calculator-go.git
-cd calculator-go/src
-go build -o calculator
-```
-
-## Usage
-
-Run the calculator with two numbers and an operator:
-
-```bash
-calculator <num1> <operator> <num2>
-```
-
-### Supported Operators
-
-| Operator | Operation     |
-|----------|---------------|
-| `+`      | Addition      |
-| `-`      | Subtraction   |
-| `*`      | Multiplication|
-| `/`      | Division      |
-
-### Examples
-
-```bash
-calculator 5 + 3
-# Output: 5 + 3 = 8
-
-calculator 10 - 4
-# Output: 10 - 4 = 6
-
-calculator 7 \* 6
-# Output: 7 * 6 = 42
-
-calculator 15 / 3
-# Output: 15 / 3 = 5
-```
-
-> **Note:** On some shells, `*` may need to be escaped (`\*`) or quoted to prevent glob expansion.
-
-### Error Handling
-
-- **Invalid number**: Prints an error message and exits.
-- **Division by zero**: Prints `Error: division by zero` and exits.
-- **Unsupported operator**: Prints `Unsupported operator: <op>` and exits.
-- **Incorrect arguments**: Shows usage instructions.
-
-```
-Usage: calculator <num1> <operator> <num2>
-Operators: + - * /
-```
-
-## Project Structure
+## 📁 Project Structure
 
 ```
 calculator-go/
-├── src/
-│   └── main.go      # Main application entry point
-├── LICENSE
-├── .gitignore
-└── README.md
+│
+├── main.go        # Entry point of the application
+├── calculator.go  # Core calculation logic
+└── README.md      # Documentation
 ```
 
-## License
+---
 
-This project is licensed under the terms of the [LICENSE](LICENSE) file in the repository.
+## 🚀 Getting Started
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/MisaghMomeniB/calculator-go.git
+```
+
+### 2️⃣ Move into project directory
+
+```bash
+cd calculator-go
+```
+
+### 3️⃣ Run the application
+
+```bash
+go run main.go
+```
+
+---
+
+## 🧮 Usage
+
+Depending on your implementation, you can run operations like:
+
+```bash
+Enter first number: 10
+Enter operator (+ - * /): +
+Enter second number: 5
+Result: 15
+```
+
+---
+
+## 📌 Example Output
+
+```
+Welcome to Calculator Go 🧮
+
+Enter first number: 12
+Enter operator: *
+Enter second number: 3
+
+Result: 36
+```
+
+---
+
+## ⚠️ Requirements
+
+* Go 1.18+ recommended 🐹
+* Any OS (Windows / Linux / macOS)
+
+---
+
+## 🧠 Future Improvements
+
+* 🧮 Support for floating point precision
+* 🧾 Expression parsing (e.g. `2 + 3 * 4`)
+* 🖥️ GUI version
+* 🧪 Unit tests
+* 📜 History of calculations
+* 🔥 Advanced math functions (sqrt, power, etc.)
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! 🎉
+
+1. Fork the project
+2. Create your feature branch
+3. Commit your changes
+4. Push and open a Pull Request
+
+---
+
+## 📄 License
+
+This project is open-source and available under the **MIT License**.
+
+---
+
+## ⭐ Show Your Support
+
+If you like this project, consider giving it a ⭐ on GitHub!
 
 ---
